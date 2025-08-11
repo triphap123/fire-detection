@@ -29,7 +29,6 @@ def main():
     fire_last_detected = False
     last_temp_sent_time = 0
     
-
     try:
         while True:
             temp = read_temp()

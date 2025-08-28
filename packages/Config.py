@@ -1,4 +1,4 @@
-RTSP_URL = "rtsp://localhost:8554/mystream"
+RTSP_URL = "rtsp://192.168.1.135:8554/mystream"
 MODEL_PATH = "/home/triphap/Documents/TriPhap/tttt/TT_ACuong/Navis_Data/model/best_90.onnx"
 
 API_URL = "https://iot-api-vercel.vercel.app/api/setvaluev2"

@@ -1,5 +1,5 @@
-import requests
 from .Config import API_URL, HEADERS, DATA
+import requests
 
 def update_data_value(data_dict, name, value_key, new_value):
     for item in data_dict["data"]:
@@ -12,6 +12,6 @@ def send_alarm(temp, status_alarm):
 
     try:
         response = requests.post(API_URL, json=DATA, headers=HEADERS)
-        print(f"Đã gửi API: {DATA} - Mã phản hồi: {response.status_code}")
+        print(f"Đã gửi API: {DATA} - Mã phản hồi: {response.text}")
     except Exception as e:
         print("Lỗi khi gửi API:", e)
